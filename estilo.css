@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(
+    'https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+:root{
+    --color-fondo:black;
+    --fuente-h1:"Anton SC", sans-serif;
+    --color-letras:black;
+    
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color:var(--color-letras);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+/* aca voy a poner el header */
+
+.header{
+    padding: 2% 0% 0% 15%;
+
+}
+
+.header_menu{
+    display: flex;
+    gap: 30px ;
+
+}
+
+.header_menu_link{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Anton SC", sans-serif;
+    color: #22d4fd;
+    text-decoration: none;
+}
+.texto_color{
+    color: aqua;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 1% 15%;
+    justify-content: space-between;
+    gap: 80px;
+    
+}
+
+.presentacion_contenido{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_titulo_h1{
+    margin-top: 5px;
+    font-family: "Anton SC", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.presentancion_parrafo{
+    font-size: 1.3rem;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 1px;
+  
+}
+
+.presentacion_enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: "Anton SC", sans-serif;
+}
+
+.presentacion_link{
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px;
+    font-family: "Anton SC", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 2px solid #22d4fd;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* esto es un comentario */
+    
+}
+
+.presentacion_redes_sociales{
+    font-family: "Anton SC", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+ 
+.presentacion_link:hover{
+    background-color: blue;
+}
+
+.presentacion_imagen{
+    width: 30%;
+    
+
+
+  
+
+}
+.footer{
+    background-color: #22d4fd;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: "Anton SC", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .presentacion_contenido{
+        width: auto;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .header{
+        padding: 10%;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+}
